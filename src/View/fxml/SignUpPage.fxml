@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Text layoutX="73.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font name="Georgia Bold" size="36.0" />
+               </font>
+            </Text>
+            <TextField fx:id="userID" layoutX="167.0" layoutY="160.0" prefHeight="25.0" prefWidth="228.0" />
+            <Text layoutX="62.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="64.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="241.0" layoutY="412.0" mnemonicParsing="false" onAction="#createButton" prefHeight="27.0" prefWidth="80.0" text="Create" />
+            <Button layoutX="979.0" layoutY="590.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="25.0" prefWidth="80.0" text="Exit" />
+            <ComboBox fx:id="questionBox" layoutX="167.0" layoutY="267.0" prefHeight="25.0" prefWidth="308.0" />
+            <Text layoutX="33.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Question">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="answerID" layoutX="167.0" layoutY="322.0" prefHeight="25.0" prefWidth="228.0" />
+            <Text layoutX="72.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorLabel" layoutX="62.0" layoutY="366.0" opacity="0.0" text="Invalid information/Password does not meet the requirements" textFill="#ee0404">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordID" layoutX="167.0" layoutY="208.0" prefHeight="25.0" prefWidth="228.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
